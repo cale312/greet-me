@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(180deg, maroon, maroon, white) no-repeat;
+    margin-top: 10px;
+}
+
+h1 {
+    border-style: outset;
+    text-align: center;
+    font-size: 6em;
+    font-family: sans-serif;
+    background: #111;
+    color: ghostwhite;
+    opacity: 0.8;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+#cut {
+    border-style: outset;
+    background: #333;
+    opacity: 0.56;
+    clear: both;
+    margin-top: -60px;
+    margin-bottom: 35px;
+    padding: 20px;
+    border-spacing: 100px;
+}
+
+#counter {
+    font-family: sans-;
+    color: navajowhite;
+    font-size: 50px;
+    margin: -40px 150px 0px 150px;
+}
+
+#reset {
+    background: maroon;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-;
+    color: white;
+    
+}
+
+#reset:hover {
+    width: 70px;
+}
+h2 {
+    color: antiquewhite;
+    margin: -30px 0px 0px 0px;
+}
+
+#radio {
+    
+}
+
+#radio p {
+    padding: 10px;
+    font-size: 30px;
+    display: inline;
+    color: whitesmoke;
+}
+
+#name {
+    border-left-style: outset;
+    border-right-style: outset;
+    border-bottom-style: outset;
+    border-top-style: outset;
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    margin-top: -30px;
+    padding: 0px 0px 10px 0px;
+    clear: both;
+    background: #222;
+    color: #555;
+    opacity: 0.8;
+}
+
+input {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: sans-;
+    color: black;
+    opacity: 0.9
+}
+
+#button {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    opacity: 0.9;
+}
+
+#click {
+    font-family: impact;
+    font-size: 30px;
+    background: maroon;
+    color: white;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#click:hover {
+    width: 146px;
+    height: 55px;
+}
+
+#greet {
+    color: antiquewhite;
+    width: 99%;
+    margin-top: -30px;
+    padding: 0px;
+    font-size: 3em;
+    font-family: sans-serif;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+
+footer {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -40px;
+    text-align: center;
+}
+
+footer img {
+    border-radius: 50%;
+}
+
+
+
+
