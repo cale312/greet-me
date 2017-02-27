@@ -22,7 +22,6 @@ function myFunction() {
     if (x.length <= 1) {
         document.getElementById("clicks").innerHTML = clicks;
     }
-    localStorage.setItem('n', clicks);
 }
 function resetFunction() {
     'use strict';
