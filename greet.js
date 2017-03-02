@@ -1,4 +1,7 @@
-var clicks = 0;
+var clicks = Number(localStorage.getItem('currentClicks'));
+
+document.getElementById('clicks').innerHTML = clicks;
+
 function myFunction() {
     'use strict';
     var x = document.getElementById("text").value;
@@ -19,10 +22,12 @@ function myFunction() {
         document.getElementById("clicks").innerHTML = clicks;
     }
     document.getElementById("text").value = "";
-    if (x.length <= 1) {
+    if (x.length < 1) {
         document.getElementById("clicks").innerHTML = clicks;
     }
+    localStorage.setItem("currentClicks", Number(clicks));
 }
+
 function resetFunction() {
     'use strict';
     var x = document.getElementById("clicks");
