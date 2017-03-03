@@ -1,7 +1,5 @@
 var clicks = Number(localStorage.getItem('currentClicks'));
 
-localStorage.clear();
-
 document.getElementById('clicks').innerHTML = clicks;
 
 function myFunction() {
