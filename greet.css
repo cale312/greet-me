@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(180deg, maroon, maroon, white) no-repeat;
+    background: linear-gradient(180deg, blue, skyblue, lightblue) no-repeat;
     margin-top: 10px;
 }
 
 h1 {
     border-style: outset;
-    border-color: #333;
+    border-color: dodgerblue;
     text-align: center;
     font-size: 6em;
     font-family: sans-serif;
@@ -27,13 +27,13 @@ h1 {
 
 #counter {
     font-family: sans-;
-    color: navajowhite;
-    font-size: 50px;
-    margin: -45px 150px 0px 150px;
+    color: white;
+    font-size: 30px;
+    margin: -25px 150px 0px 150px;
 }
 
 #reset {
-    background: maroon;
+    background: blue;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: sans-;
@@ -42,15 +42,11 @@ h1 {
 }
 
 #reset:hover {
-    width: 70px;
+    background: navy;
 }
 h2 {
-    color: antiquewhite;
+    color: white;
     margin: -30px 0px 0px 0px;
-}
-
-#radio {
-    
 }
 
 #radio p {
@@ -65,11 +61,11 @@ h2 {
     font-size: 50px;
     padding: 0px 0px 10px 0px;
     clear: both;
-    background: rgba(2, 2, 2, 0.3);
+    background: rgba(0, 0, 150, 0.5);
     color: #555;
 }
 
-input {
+#text {
     padding: 10px;
     text-align: center;
     font-size: 40px;
@@ -89,13 +85,14 @@ input {
 #click {
     font-family: impact;
     font-size: 30px;
-    background: maroon;
+    background: blue;
     color: white;
     margin-top: -10px;
     margin-bottom: -10px;
 }
 
 #click:hover {
+    background: navy;
     width: 146px;
     height: 55px;
 }
@@ -108,7 +105,7 @@ input {
     font-size: 3em;
     font-family: sans-serif;
     text-align: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,100,0.4);
 }
 
 footer {
@@ -121,6 +118,7 @@ footer {
 footer img {
     border-radius: 50%;
 }
+
 
 
 
