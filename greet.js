@@ -4,16 +4,12 @@ localStorage.clear();
 
 document.getElementById('clicks').innerHTML = clicks;
 
-var namesGreeted = {};
-console.log(namesGreeted);
-
 function myFunction() {
     'use strict';
     var x = document.getElementById("text").value;
     if (document.getElementById("one").checked === true && x.length > 0) {
         document.getElementById("demo").innerHTML = 'Hello ' + x;
         document.getElementById("clicks").innerHTML = clicks += 1;
-        namesGreeted.push(x.value);
     } else if (document.getElementById("two").checked === true && x.length > 0) {
         document.getElementById("demo").innerHTML = 'Hola ' + x;
         document.getElementById("clicks").innerHTML = clicks += 1;
