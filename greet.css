@@ -70,7 +70,8 @@ h2 {
     margin-bottom: 10px;
     font-family: sans-;
     color: black;
-    opacity: 0.9
+    opacity: 0.9;
+    text-transform: capitalize;
 }
 
 #button {
@@ -115,6 +116,10 @@ footer {
 
 footer #logo {
     border-radius: 50%;
+}
+
+audio {
+    visibility: hidden;
 }
 
 
