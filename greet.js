@@ -29,19 +29,16 @@ function myFunction() {
         document.getElementById("greets").innerHTML = greets += 1;
         
     } else if (document.getElementById("english").checked && x.length > 0  && x !== " " && x !== undefined) {
-        document.getElementById("demo").innerHTML = 'Hello ' + x;
+        document.getElementById("demo").innerHTML = 'Hello again ' + x;
         document.getElementById("greets").innerHTML = greets;
-        alert('Name already greeted in one of the languages, please type in a different name, but please find your greeting at the bottom.');
         
     } else if (document.getElementById("espanol").checked && x.length > 0  && x !== " " && x !== undefined) {
-        document.getElementById("demo").innerHTML = 'Hola ' + x;
+        document.getElementById("demo").innerHTML = 'Hola de nuevo ' + x;
         document.getElementById("greets").innerHTML = greets;
-        alert('Name already greeted in one of the languages, please type in a different name, but please find your greeting at the bottom.');
         
     } else if (document.getElementById("xhosa").checked && x.length > 0  && x !== " " && x !== undefined) {
-        document.getElementById("demo").innerHTML = 'Molo ' + x;
+        document.getElementById("demo").innerHTML = 'Molo kwakhona ' + x;
         document.getElementById("greets").innerHTML = greets;
-        alert('Name already greeted in one of the languages, please type in a different name, but please find your greeting at the bottom.');
     }
     document.getElementById("text").value = "";
     localStorage.setItem("currentGreets", Number(greets));
