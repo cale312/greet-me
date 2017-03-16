@@ -44,6 +44,14 @@ function myFunction() {
     localStorage.setItem("currentGreets", Number(greets));
 }
 
+function clearGreeting() {
+    var greeting;
+    greeting = document.getElementById('demo').innerHTML;
+    if (greeting.length > 0) {
+        document.getElementById('demo').innerHTML = '____________';
+    }
+}
+
 function resetFunction() {
     'use strict';
     var x = document.getElementById("greets");
