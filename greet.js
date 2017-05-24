@@ -42,14 +42,14 @@ function manageNames(name){
   if (name.value !== '' && namesGreeted[name] === !undefined){
     return name.value;
   } else if(name.value !== '' && namesGreeted[name] === undefined){
-    
+
   } else{
     return 'Please enter a valid name';
   }
 }
 
 // Call the functions that return the name greeted and the massage
-function manageGreeting(){
+function displayGreeting(){
   var lang = document.querySelectorAll('.lang');
   var name = document.querySelector('#text');
   var result = greetMassage(lang);
@@ -59,5 +59,5 @@ function manageGreeting(){
 }
 
 greet.addEventListener('click', function(){
-  manageGreeting();
+  displayGreeting();
 });
