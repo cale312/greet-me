@@ -1,57 +1,52 @@
 body {
-    background: linear-gradient(180deg, maroon, maroon, white) no-repeat;
+    background: linear-gradient(180deg, #444, white, #444) no-repeat;
     margin-top: 10px;
 }
 
 h1 {
     border-style: outset;
+    border-color: darkgrey;
     text-align: center;
     font-size: 6em;
     font-family: sans-serif;
-    background: #111;
-    color: ghostwhite;
-    opacity: 0.8;
+    background: linear-gradient(40deg, #666, white, #666);
+    color: #666;
     padding-bottom: 20px;
     margin-top: 10px;
 }
 
 #cut {
-    border-style: outset;
-    background: #333;
-    opacity: 0.56;
+    border: outset grey;
+    background: linear-gradient(-40deg, #999, white, #999);
     clear: both;
     margin-top: -60px;
-    margin-bottom: 35px;
-    padding: 20px;
+    padding: .5em;
     border-spacing: 100px;
 }
 
 #counter {
     font-family: sans-;
-    color: navajowhite;
-    font-size: 50px;
-    margin: -40px 150px 0px 150px;
+    color: white;
+    font-size: 30px;
+    margin: -25px 150px 0px 150px;
 }
 
 #reset {
-    background: maroon;
+    background: #444;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: sans-;
     color: white;
-    
+    cursor: pointer;
 }
 
 #reset:hover {
-    width: 70px;
+    background: #999;
+    box-shadow: 0px 0px 10px black;
 }
 h2 {
-    color: antiquewhite;
+    color: white;
     margin: -30px 0px 0px 0px;
-}
-
-#radio {
-    
 }
 
 #radio p {
@@ -62,29 +57,27 @@ h2 {
 }
 
 #name {
-    border-left-style: outset;
-    border-right-style: outset;
-    border-bottom-style: outset;
-    border-top-style: outset;
     text-align: center;
     font-size: 50px;
-    margin: 0px;
-    margin-top: -30px;
     padding: 0px 0px 10px 0px;
     clear: both;
-    background: #222;
+    background: linear-gradient(180deg, #999 10%, #444);
     color: #555;
-    opacity: 0.8;
 }
 
-input {
+#text {
     padding: 10px;
     text-align: center;
     font-size: 40px;
     margin-bottom: 10px;
     font-family: sans-;
     color: black;
-    opacity: 0.9
+    opacity: 0.9;
+    text-transform: capitalize;
+}
+
+#text:hover {
+    box-shadow: 0px 0px 50px;
 }
 
 #button {
@@ -97,26 +90,39 @@ input {
 #click {
     font-family: impact;
     font-size: 30px;
-    background: maroon;
+    background: grey;
     color: white;
     margin-top: -10px;
     margin-bottom: -10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #111;
 }
 
 #click:hover {
-    width: 146px;
-    height: 55px;
+    background: darkgrey;
+}
+
+#clrGreeter {
+    clear: both;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#clrGreeter:hover {
+    box-shadow: 0px 0px 10px black;
+    background: grey;
 }
 
 #greet {
-    color: antiquewhite;
+    color: white;
     width: 99%;
-    margin-top: -30px;
+    margin-top: -50px;
     padding: 0px;
     font-size: 3em;
     font-family: sans-serif;
     text-align: center;
-    background: rgba(0,0,0,0.4);
+    background: #555;
+    text-transform: capitalize;
 }
 
 footer {
@@ -126,9 +132,11 @@ footer {
     text-align: center;
 }
 
-footer img {
+footer #logo {
     border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
 }
+
 
 
 

@@ -1,48 +1,59 @@
 <!Doctype html>
 <html>
-    
-    <head>
-        <link href="greet.css" rel="stylesheet">
-        
-        <header>
-            <title>Greet me!</title>
-        </header>
-        
-    </head>
-    
-    <body>
-        
-        <h1><b>&#91; Greeting &#93;</b></h1>
-        <div id="cut"></div>
-        <div id="name">
-            <div id="counter">
-                <p id="greeter">Greetings: <a id="clicks">0</a><br/><button id="reset" type="reset" onclick="resetFunction()">reset</button></p>
-            </div>
-                <h2>Name:</h2><input id="text" placeholder="please enter your name"></input>
-        <br/>
-        <form>
-        <div id="radio">
-            <p><input type="radio" name="lang" id="one">English</p>
-            <p><input type="radio" name="lang" id="two">Espanol</p>
-            <p><input type="radio" name="lang" id="three">isiXhosa</p>
-        </div>
-        </form>
-        </div>
-    
-    <div id="button">
-        <button id="click" type="button" onclick="myFunction()">Greet me!</button>
-    </div>
-    
-    <div id="greet">
-        <h3 id="demo"></h3>
-    </div>
-    
-    </body>
 
-<footer>&copy;codeX 2017<br/><img src="Logo.jpg" width="50" height="50"></footer>
+<head>
+  <link href="greet.css" rel="stylesheet">
+
+  <header>
+    <title>Greet me!</title>
+  </header>
+
+</head>
+
+<body>
+
+  <h1><b>&#123; Greeting &#125;</b></h1>
+  <div id="cut">
+    <h3 id="time"></h3></div>
+  <div id="name">
+    <div id="counter">
+      <p id="greeter">You have been greeted
+        <a id="greets"></a> times(s)<br/><button id="reset" type="reset" onclick="resetFunction()">reset</button></p>
+    </div>
+    <h2>Name:</h2><input id="text" placeholder="please enter your name">
+    <br/>
+    <form>
+      <div id="radio">
+        <p><input type="radio" name="lang" id="english">English</p>
+        <p><input type="radio" name="lang" id="espanol">Espanol</p>
+        <p><input type="radio" name="lang" id="xhosa">isiXhosa</p>
+      </div>
+    </form>
+  </div>
+
+  <div id="button">
+    <button id="click" type="button" onclick="myFunction()">Greet me!</button>
+    <br/>
+    <input id="clrGreeter" type="button" onclick="clearGreeting()" value="clear greeting">
+  </div>
+  <div id="greet">
+    <!--when the above greet me button is clicked, the greeting text with the typed name will display here-->
+    <h3 id="demo">____________</h3>
+  </div>
+
+</body>
+
+<footer>
+  &copy;codeX 2017
+  <br/> site By: Zikisa Cale Sogaxa
+  <br/>
+  <a href="https://www.facebook.com/caleArts/" target="_blank"><img id="logo" src="img/Logo.jpg" title="caleOasin" width="50" height="50"></a>
+  <br/>
+  <a href="https://www.instagram.com/sogaxa_zikisa/" target="_blank"><img src="img/Instagram-PNG-File.png" width="40" title="@zikisa_sogaxa" height="40" /></a>
+  <a href="https://www.facebook.com/cale.oasin.5" target="_blank"><img src="img/Facebook-Transparent.png" title="zikisa cale sogaxa" width="40" height="40" /></a>
+</footer>
 
 <script src="greet.js">
-
 </script>
 
 </html>
