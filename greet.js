@@ -1,8 +1,7 @@
 var greets = Number(localStorage.getItem('currentGreets'));
-
 document.getElementById('greets').innerHTML = greets;
 
-var greet = document.querySelector('#greet');
+var greet = document.querySelector('#click');
 var namesGreeted = {};
 
 for (var i = 0; i < namesGreeted.length; i++) {}
@@ -43,24 +42,36 @@ for (var i = 0; i < namesGreeted.length; i++) {}
 //     document.getElementById("text").value = "";
 //     localStorage.setItem("currentGreets", Number(greets));
 // }
-
-greet.addEventListener('click', function(){
-  
-});
-
 function clearGreeting() {
-    var greeting;
-    greeting = document.getElementById('demo').innerHTML;
-    if (greeting.length > 0) {
-        document.getElementById('demo').innerHTML = '____________';
-    }
+  var greeting;
+  greeting = document.getElementById('demo').innerHTML;
+  if (greeting.length > 0) {
+    document.getElementById('demo').innerHTML = '____________';
+  }
 }
 
 function resetFunction() {
-    'use strict';
-    var x = document.getElementById("greets");
-    if (x >= 0) {
-        document.getElementById("greets").innerHTML = greets = 0;
-    }
-    localStorage.clear();
+  'use strict';
+  var x = document.getElementById("greets");
+  if (x >= 0) {
+    document.getElementById("greets").innerHTML = greets = 0;
+  }
+  localStorage.clear();
 }
+
+function greetMassage(lang){
+  for (let i = 0; i < lang.length; i++){
+    if(lang[i].checked === 'english'){
+      return 'Hello'
+    } else if(lang[i].checked === 'xhosa'){
+      return 'Molo'
+    } else if(lang[i].checked === 'espanol'){
+      return 'Hola'
+    }
+  }
+}
+
+greet.addEventListener('click', function(){
+  var lang = documen.querySelectorAll('.lang');
+  
+});
