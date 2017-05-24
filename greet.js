@@ -1,47 +1,12 @@
-var greets = Number(localStorage.getItem('currentGreets'));
+'use strict';
+var greets = 0;
 document.getElementById('greets').innerHTML = greets;
 
 var greet = document.querySelector('#click');
 var namesGreeted = {};
 
-for (var i = 0; i < namesGreeted.length; i++) {}
+for (let i = 0; i < namesGreeted.length; i++) {}
 
-// function myFunction() {
-//     'use strict';
-//     var x = document.getElementById("text").value;
-//     //if radio button is checked and the length of what is typed is greater than zero and it is not a space and if the name looped is undefined/not in the list -->
-//     if (document.getElementById("english").checked && x.length > 0 && x !== " " && namesGreeted[x] === undefined) {
-//         // >-- add it to the list and -->
-//         namesGreeted[x] = 1;
-//         // >-- display this greeting
-//         document.getElementById("demo").innerHTML = 'Hello ' + x;
-//         document.getElementById("greets").innerHTML = greets += 1;
-//
-//     } else if (document.getElementById("espanol").checked && x.length > 0 && x !== " " && namesGreeted[x] === undefined) {
-//         namesGreeted[x] = 1;
-//         document.getElementById("demo").innerHTML = 'Hola ' + x;
-//         document.getElementById("greets").innerHTML = greets += 1;
-//
-//     } else if (document.getElementById("xhosa").checked && x.length > 0 && x !== " " && namesGreeted[x] === undefined) {
-//         namesGreeted[x] = 1;
-//         document.getElementById("demo").innerHTML = 'Molo ' + x;
-//         document.getElementById("greets").innerHTML = greets += 1;
-//
-//     } else if (document.getElementById("english").checked && x.length > 0  && x !== " " && x !== undefined) {
-//         document.getElementById("demo").innerHTML = 'Hello again ' + x;
-//         document.getElementById("greets").innerHTML = greets;
-//
-//     } else if (document.getElementById("espanol").checked && x.length > 0  && x !== " " && x !== undefined) {
-//         document.getElementById("demo").innerHTML = 'Hola de nuevo ' + x;
-//         document.getElementById("greets").innerHTML = greets;
-//
-//     } else if (document.getElementById("xhosa").checked && x.length > 0  && x !== " " && x !== undefined) {
-//         document.getElementById("demo").innerHTML = 'Molo kwakhona ' + x;
-//         document.getElementById("greets").innerHTML = greets;
-//     }
-//     document.getElementById("text").value = "";
-//     localStorage.setItem("currentGreets", Number(greets));
-// }
 function clearGreeting() {
   var greeting;
   greeting = document.getElementById('demo').innerHTML;
@@ -59,19 +24,40 @@ function resetFunction() {
   localStorage.clear();
 }
 
+// Checks which radio has been checked and returns the right greeting massage in that language that has been selected..
 function greetMassage(lang){
   for (let i = 0; i < lang.length; i++){
-    if(lang[i].checked === 'english'){
+    if(lang[i].checked && lang[i].value === 'english'){
       return 'Hello'
-    } else if(lang[i].checked === 'xhosa'){
+    } else if(lang[i].checked && lang[i].value === 'xhosa'){
       return 'Molo'
-    } else if(lang[i].checked === 'espanol'){
+    } else if(lang[i].checked && lang[i].value === 'espanol'){
       return 'Hola'
     }
   }
 }
 
+// Takes in the name inputed...
+function manageNames(name){
+  if (name.value !== '' && namesGreeted[name] === !undefined){
+    return name.value;
+  } else if(name.value !== '' && namesGreeted[name] === undefined){
+    
+  } else{
+    return 'Please enter a valid name';
+  }
+}
+
+// Call the functions that return the name greeted and the massage
+function manageGreeting(){
+  var lang = document.querySelectorAll('.lang');
+  var name = document.querySelector('#text');
+  var result = greetMassage(lang);
+  var greetName = manageNames(name);
+
+  document.querySelector('#demo').innerHTML = result + ' ' + greetName;
+}
+
 greet.addEventListener('click', function(){
-  var lang = documen.querySelectorAll('.lang');
-  
+  manageGreeting();
 });
