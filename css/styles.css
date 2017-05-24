@@ -1,0 +1,19 @@
+body {background: linear-gradient(180deg, #444, white, #444) no-repeat; margin-top: 10px;}
+h1 {border-style: outset; border-color: darkgrey; text-align: center; font-size: 6em; font-family: sans-serif;   background: linear-gradient(40deg, #666, white, #666); color: #666; padding-bottom: 20px; margin-top: 10px;}
+#cut {border: outset grey; background: linear-gradient(-40deg, #999, white, #999); clear: both; margin-top: -60px; padding: .5em; border-spacing: 100px;}
+#counter {font-family: sans-; color: white; font-size: 30px; margin: -25px 150px 0px 150px;}
+#reset {background: #444; font-size: 20px; margin-bottom: 10px; font-family: sans-; color: white; cursor: pointer;}
+#reset:hover {background: #999; box-shadow: 0px 0px 10px black;}
+h2 {color: white; margin: -30px 0px 0px 0px;}
+#radio p {padding: 10px; font-size: 30px; display: inline; color: whitesmoke;}
+#name {text-align: center; font-size: 50px; padding: 0px 0px 10px 0px; clear: both; background: linear-gradient(180deg, #999 10%, #444); color: #555;}
+#text {padding: 10px; text-align: center; font-size: 40px; margin-bottom: 10px; font-family: sans-; color: black; opacity: 0.9; text-transform: capitalize;}
+#text:hover {box-shadow: 0px 0px 50px;}
+#button {text-align: center; margin-right: 50px; margin-left: 50px; opacity: 0.9;}
+#click {font-family: impact; font-size: 30px; background: grey; color: white; margin-top: -10px; margin-bottom: -10px; cursor: pointer; box-shadow: 0px 0px 5px #111;}
+#click:hover {background: darkgrey;}
+#clrGreeter {clear: both; margin: 10px; cursor: pointer;}
+#clrGreeter:hover {box-shadow: 0px 0px 10px black; background: grey;}
+#greet {color: white; width: 99%; margin-top: -50px; padding: 0px; font-size: 3em; font-family: sans-serif; text-align: center; background: #555; text-transform: capitalize;}
+footer {margin-left: 100px; margin-right: 100px; margin-top: -40px; text-align: center;}
+footer #logo {border-radius: 50%; box-shadow: 0px 0px 10px black;}
