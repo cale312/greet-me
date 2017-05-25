@@ -5,7 +5,10 @@ function displayGreeting() {
   var greetedNames = [];
   var lang = document.getElementsByName('lang');
   var name = document.querySelector('#text');
-  var greet = greetLanguage(lang);
+
+  // Call the functions for running the greeting
+  var checkedBtn = getRadioButton(lang);
+  var greet = greetMassage(checkedBtn);
   var greetName = getName(name);
   // var counter = counter(greetedNames);
 
