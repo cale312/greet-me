@@ -2,7 +2,6 @@
 
 // Call the functions that return the name greeted and the massage
 function displayGreeting() {
-  var greetedNames = [];
   var lang = document.getElementsByName('lang');
   var name = document.querySelector('#text');
 
@@ -10,7 +9,7 @@ function displayGreeting() {
   var checkedBtn = getRadioButton(lang);
   var greet = greetMassage(checkedBtn);
   var greetName = getName(name);
-  // var counter = counter(greetedNames);
+  var counter = counter(greetedNames);
 
   if (greet === undefined) {
     return greetName;
