@@ -4,7 +4,6 @@
 function getName(name) {
   var namesGreeted = {};
 
-  // Loopping through the namesGreeted object
   for (let i = 0; i < namesGreeted.length; i++) {}
 
   if (name.value !== '' && namesGreeted[name] === !undefined) {
