@@ -3,6 +3,7 @@ var greet = document.querySelector('.greet-btn');
 var reset = document.querySelector('.rst-btn');
 var newName = document.querySelector('.name');
 var lang = document.querySelectorAll('.lang');
+document.querySelector('.counter').innerHTML = counterInc(newName.value);
 
 // compile the greeting sentence
 function displayGreeting(){
@@ -24,5 +25,6 @@ greet.addEventListener('click', function(){
 });
 
 reset.addEventListener('click', function(){
+  localStorage.clear();
   document.querySelector('.counter').innerHTML = resetCounter(counter);
 });
