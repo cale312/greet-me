@@ -1,11 +1,12 @@
 'use strict';
 var greet = document.querySelector('.greet-btn');
-var newName = document.querySelector('.name').value;
+var reset = document.querySelector('.rst-btn');
+var newName = document.querySelector('.name');
 var lang = document.querySelectorAll('.lang');
 
 // compile the greeting sentence
 function displayGreeting(){
-    var greetName = getName(newName);
+    var greetName = getName(newName).value;
     var checkedBtn = getRadioButton(lang);
     var greetMassage = getMassage(checkedBtn);
     if (greetName !== undefined && greetMassage !== undefined){
@@ -18,6 +19,10 @@ function displayGreeting(){
 // send results to the DOM
 greet.addEventListener('click', function(){
     document.querySelector('.display').innerHTML = displayGreeting();
-    document.querySelector('.counter').innerHTML = greetCounter(name);
+    document.querySelector('.counter').innerHTML = counterInc(newName);
     newName.value = '';
+});
+
+reset.addEventListener('click', function(){
+  document.querySelector('.counter').innerHTML = resetCounter(counter);
 });
