@@ -1,40 +1,36 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
+
+<link href="css/styles.css" type="text/css" rel="stylesheet">
 <head>
-  <link href="css/styles.css" rel="stylesheet">
+  <title>Greet Me!</title>
   <header>
-    <title>Greet me!</title>
+    <h1>GREETINGS WEB-APP</h1>
   </header>
 </head>
-<body>
-  <h1><b>&#123; Greeting &#125;</b></h1>
-  <div id="cut">
-    <h3 id="time"></h3></div>
-  <div id="name">
-    <div id="counter">
-      <p id="greeter">You have been greeted
-        <a id="greets">0</a> times(s)<br/><button id="reset" type="reset">reset</button></p>
-    </div>
-    <h2>Name:</h2><input id="text" placeholder="please enter your name">
-    <br/>
-    <form>
-      <div id="radio">
-        <p><input type="radio" name='lang' value="english">English</p>
-        <p><input type="radio" name='lang' value="espanol">Espanol</p>
-        <p><input type="radio" name='lang' value="xhosa">isiXhosa</p>
-      </div>
-    </form>
-  </div>
-  <div id="button">
-    <button id="click" type="button">Greet me!</button>
-    <br/>
-    <input id="clrGreeter" type="button" value="clear greeting">
-  </div>
-  <div id="greet">
-    <!--when the above greet me button is clicked, the greeting text with the typed name will display here-->
-    <h3 id="demo">____________</h3>
-  </div>
 
+<body>
+  <br>
+  <br>
+  <div class="input-field">
+    <input type="text" placeholder="your name" class="name">
+    <br>
+    <br>
+    <input type="radio" name="lang" class="lang" value="eng">English
+    <input type="radio" name="lang" class="lang" value="xho">Xhosa
+    <input type="radio" name="lang" class="lang" value="esp">Espanol
+    <br>
+    <br>
+    <span class="counter">0</span>
+  </div>
+  <br>
+  <br>
+  <input type="submit" class="greet-btn" value="greet">
+  <br>
+  <br>
+  <div class="name-div">
+    <span class="display"></span>
+  </div>
 </body>
 
 <footer>
@@ -47,11 +43,17 @@
   <a href="https://www.facebook.com/cale.oasin.5" target="_blank"><img src="img/Facebook-Transparent.png" title="zikisa cale sogaxa" width="40" height="40" /></a>
 </footer>
 
-<script src="script/getRadioButtonController.js"></script>
-<script src="script/getLanguageController.js"></script>
-<script src="script/counterController.js"></script>
-<script src="script/getNameController.js"></script>
-<script src="script/displayController.js"></script>
-<script src="script/main.js"></script>
+<script class="template" type="text/x-handlebars">
+  {{#each names}}
+    <h1>{{name}}</h1>
+  {{/each}}
+</script>
+
+<script src="scripts/getName.js"></script>
+<script src="scripts/getMassage.js"></script>
+<script src="scripts/counterInc.js"></script>
+<script src="scripts/getRadioButton.js"></script>
+<script src="scripts/domDisplay.js"></script>
+<script src="scripts/main.js"></script>
 
 </html>
