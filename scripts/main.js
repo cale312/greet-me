@@ -25,6 +25,5 @@ greet.addEventListener('click', function(){
 });
 
 reset.addEventListener('click', function(){
-  localStorage.clear();
   document.querySelector('.counter').innerHTML = resetCounter(counter);
 });
