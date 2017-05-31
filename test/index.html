@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
     <head>
-        <title>tester!</title>
+        <title>Greeting web-app: tests</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
@@ -24,11 +24,13 @@
         <script src="../scripts/getName.js"></script>
         <script src="../scripts/getMassage.js"></script>
         <script src="../scripts/counterInc.js"></script>
+        <script src="../scripts/resetCounter.js"></script>
 
         <!-- followed by the tests -->
         <script src="getName.test.js"></script>
         <script src="getMassage.test.js"></script>
         <script src="counterInc.test.js"></script>
+        <script src="resetCounter.test.js"></script>
         <script>
             //configure and run mocha
             mocha.checkLeaks();
