@@ -5,5 +5,12 @@ header{padding: 10px; background: black; color: ghostwhite; letter-spacing: .1em
 .counter{font-size: 1.5em;}
 .greet-btn{border: solid 1px; padding: 10px 50px; border-radius: 5px; font-family: monospace; font-weight: bolder; background: black; color: ghostwhite; cursor: pointer;}
 .greet-btn:hover{background: ghostwhite; color: black;}
+.rst-btn{border: solid 1px; padding: 5px 20px; border-radius: 5px; font-family: monospace; font-weight: bolder; background: black; color: ghostwhite; cursor: pointer;}
+.rst-btn:hover{background: ghostwhite; color: black;}
 .name-div{display: inline-block; padding: 50px 120px; background: black; border-radius: 5px}
 .display{padding: 10px 100px; background: ghostwhite; font-family: sans-serif;}
+.footer img{width: 50; height: 50px; list-style: none;}
+.footer li{list-style: none;}
+.list-inline li{display: inline-block;}
+h4{float: left; font-family: monospace;}
+hr{width: 500px;}
