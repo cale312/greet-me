@@ -2,6 +2,7 @@
 <html>
 
 <link href="css/styles.css" type="text/css" rel="stylesheet">
+
 <head>
   <title>Greet Me!</title>
   <header>
@@ -22,6 +23,8 @@
     <br>
     <br>
     <span class="counter">0</span>
+    <br>
+    <input type="submit" name="" value="reset" class="rst-btn">
   </div>
   <br>
   <br>
@@ -32,28 +35,33 @@
     <span class="display"></span>
   </div>
 </body>
-
-<footer>
-  &copy;codeX 2017
-  <br/> site By: Zikisa Cale Sogaxa
-  <br/>
-  <a href="https://www.facebook.com/caleArts/" target="_blank"><img id="logo" src="img/Logo.jpg" title="caleOasin" width="50" height="50"></a>
-  <br/>
-  <a href="https://www.instagram.com/sogaxa_zikisa/" target="_blank"><img src="img/Instagram-PNG-File.png" width="40" title="@zikisa_sogaxa" height="40" /></a>
-  <a href="https://www.facebook.com/cale.oasin.5" target="_blank"><img src="img/Facebook-Transparent.png" title="zikisa cale sogaxa" width="40" height="40" /></a>
-</footer>
-
-<script class="template" type="text/x-handlebars">
-  {{#each names}}
-    <h1>{{name}}</h1>
-  {{/each}}
-</script>
+<br>
+<br>
+<hr>
+<br>
+<div class="footer">
+  <ul class="list-inline">
+    <li>
+      <a href="https://www.instagram.com/sogaxa_zikisa/" class="btn-social btn-outline" target="_blank"><img src="img/instagram.png" alt=""></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sogaxacale" class="btn-social btn-outline" target="_blank"><img src="img/facebook.png" alt=""></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/zikisacalesogaxa" class="btn-social btn-outline" target="_blank"><img src="img/Linkedin.png" alt=""></a>
+    </li>
+    <li>
+      <a href="https://www.github.com/cale312" class="btn-social btn-outline" target="_blank"><img src="img/github.png" alt=""></a>
+    </li>
+  </ul>
+  <h4>site By: Zikisa Cale Sogaxa</h4>
+</div>
 
 <script src="scripts/getName.js"></script>
 <script src="scripts/getMassage.js"></script>
 <script src="scripts/counterInc.js"></script>
 <script src="scripts/getRadioButton.js"></script>
-<script src="scripts/domDisplay.js"></script>
+<script src="scripts/resetCounter.js"></script>
 <script src="scripts/main.js"></script>
 
 </html>
