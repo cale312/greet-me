@@ -1,6 +1,6 @@
 'use strict';
 
-var counter = 0;
+var counter = Number(localStorage.getItem('counter'));
 var greetedNames = {};
 
 // counter
@@ -9,6 +9,8 @@ function counterInc(newName){
     counter += 1;
     greetedNames[newName] = 1;
     localStorage.setItem('counter', counter);
+  } else {
+    counter = Number(localStorage.getItem('counter'));
   }
   return counter;
 }
